@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import PricingPlans, { PlanItem } from "@/components/PricingPlans";
+import Testimonials from "@/components/Testimonials";
+import FaqSection from "@/components/FaqSection";
 import Footer from "@/components/Footer";
 import BookingModal from "@/components/BookingModal";
 import { MessageSquare, Phone } from "lucide-react";
@@ -62,10 +64,16 @@ export default function Home() {
       {/* 3. Payments & Services (Per room 199, Kitchen 199, Bathroom 199, Full House Under 1000 + Payment Modes) */}
       <PricingPlans onBookPlan={handleBookPlan} />
 
-      {/* 4. Contact Details Footer */}
+      {/* 4. Real Customer Testimonials */}
+      <Testimonials />
+
+      {/* 5. Frequently Asked Questions */}
+      <FaqSection />
+
+      {/* 6. Contact Details Footer */}
       <Footer onBookClick={handleOpenBooking} />
 
-      {/* 5. Direct Booking & Slot Modal */}
+      {/* 7. Direct Booking & Slot Modal */}
       <BookingModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}

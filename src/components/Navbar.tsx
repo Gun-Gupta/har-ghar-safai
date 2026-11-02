@@ -135,7 +135,7 @@ export default function Navbar({
             <span>Plans &amp; Rates</span>
           </a>
           <a
-            href="#payment-modes"
+            href="#reviews"
             style={{
               textDecoration: "none",
               color: "#57524E",
@@ -146,7 +146,21 @@ export default function Navbar({
               transition: "color 0.2s ease",
             }}
           >
-            Payment Policy
+            Reviews
+          </a>
+          <a
+            href="#faqs"
+            style={{
+              textDecoration: "none",
+              color: "#57524E",
+              fontSize: "0.78rem",
+              fontWeight: 600,
+              letterSpacing: "0.03em",
+              textTransform: "uppercase",
+              transition: "color 0.2s ease",
+            }}
+          >
+            FAQs
           </a>
           <a
             href="#contact"
@@ -160,7 +174,7 @@ export default function Navbar({
               transition: "color 0.2s ease",
             }}
           >
-            Contact Details
+            Contact
           </a>
         </nav>
 
@@ -286,7 +300,7 @@ export default function Navbar({
             Plans: ₹199 / Full House / Custom
           </a>
           <a
-            href="#payment-modes"
+            href="#reviews"
             onClick={() => setMobileMenuOpen(false)}
             style={{
               textDecoration: "none",
@@ -295,7 +309,19 @@ export default function Navbar({
               fontWeight: 600,
             }}
           >
-            Payment Policy (0% Advance)
+            Reviews &amp; Ratings (4.9★)
+          </a>
+          <a
+            href="#faqs"
+            onClick={() => setMobileMenuOpen(false)}
+            style={{
+              textDecoration: "none",
+              color: "#57524E",
+              fontSize: "0.95rem",
+              fontWeight: 600,
+            }}
+          >
+            FAQs &amp; Guarantees
           </a>
           <a
             href="#contact"

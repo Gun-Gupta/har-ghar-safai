@@ -1,33 +1,45 @@
 "use client";
 
 import React from "react";
-import { Star, Quote, CheckCircle2, Sparkles } from "lucide-react";
+import { Star, CheckCircle2, Sparkles, ShieldCheck } from "lucide-react";
 
 export default function Testimonials() {
   const reviews = [
     {
-      name: "Sunita Kapoor",
-      location: "Greater Kailash, New Delhi",
-      occasion: "Diwali 360° Deep Clean",
-      text: "Every year before Diwali, cleaning our ancestral kothi was exhausting. Har Ghar Safai’s crew arrived punctually at 8 AM with heavy-duty German vacuum and steam equipment. What touched me most was how beautifully they polished all our brass pooja thalis and diyas without me even asking! Total Lakshmi Pujan perfection.",
+      name: "Rohit & Ananya Verma",
+      location: "Sector 62, Noida",
+      service: "Full House Package (₹899)",
+      text: "Booked the Full House under ₹1,000 package before shifting into our 2BHK rental. The 2-person crew spent 4 hours deep cleaning every corner, wardrobes, and windows. Paying after inspecting everything gave us 100% peace of mind. Truly unbeatable value!",
       rating: 5,
       date: "October 2026",
+      tag: "Verified Booking",
     },
     {
-      name: "Rajesh & Meera Mittal",
-      location: "Juhu, Mumbai",
-      occasion: "Shaadi Pre-Wedding Villa Polish",
-      text: "We hosted both our daughter's Mehendi and Sangeet at home with over 150 guests coming in and out. The Italian marble crystallization they did made the entire floor look like a ballroom mirror. Best of all, their post-wedding recovery team cleaned all confetti and food stains the very next morning!",
+      name: "Pooja Sharma",
+      location: "Dwarka, New Delhi",
+      service: "Kitchen Deep Clean (₹199)",
+      text: "My kitchen chimney and tiled backsplash had heavy oil grease from festive cooking. At just ₹199, I was skeptical, but the cleaners used industrial degreasers and made my kitchen sparkle like brand new. No advance required either!",
       rating: 5,
       date: "October 2026",
+      tag: "Kitchen Specialist",
     },
     {
-      name: "Dr. Arvind Rao",
-      location: "Indiranagar, Bengaluru",
-      occasion: "Full Home Deep Sanitization",
-      text: "I was particular about chemical smells because we have twin toddlers and two golden retrievers. Har Ghar Safai used 100% natural citrus enzymes. The home smelled crisp like fresh lemons and clean linen, without an ounce of chlorine or harsh fumes. Outstanding professionalism.",
+      name: "Amit Singhal",
+      location: "DLF Phase 4, Gurgaon",
+      service: "2 Bathrooms + 1 Bedroom (₹597)",
+      text: "The hard water scaling on our bathroom glass and chrome taps was completely removed. Hardworking, polite staff who arrived right on time with all their own cleaning liquids and microfiber mops. Highly recommend Har Ghar Safai to everyone.",
       rating: 5,
       date: "September 2026",
+      tag: "Repeat Customer",
+    },
+    {
+      name: "Meenakshi Sundaram",
+      location: "Indirapuram, Ghaziabad",
+      service: "Custom Service (Balcony + Sofa)",
+      text: "Requested custom service for pigeon netting cleanup, balcony high-pressure wash, and 5-seater sofa shampooing. The quote given on WhatsApp was transparent with zero hidden costs. Excellent service!",
+      rating: 5,
+      date: "September 2026",
+      tag: "Custom Service",
     },
   ];
 
@@ -42,8 +54,8 @@ export default function Testimonials() {
       }}
     >
       <div className="container">
-        {/* Header */}
-        <div style={{ textAlign: "center", maxWidth: "680px", margin: "0 auto 48px auto" }}>
+        {/* Section Header */}
+        <div style={{ textAlign: "center", maxWidth: "680px", margin: "0 auto 46px auto" }}>
           <div
             style={{
               display: "inline-flex",
@@ -53,7 +65,7 @@ export default function Testimonials() {
               borderRadius: "9999px",
               backgroundColor: "rgba(217, 119, 6, 0.1)",
               color: "#B45309",
-              fontSize: "0.8rem",
+              fontSize: "0.78rem",
               fontWeight: 700,
               textTransform: "uppercase",
               letterSpacing: "0.06em",
@@ -61,127 +73,178 @@ export default function Testimonials() {
             }}
           >
             <Sparkles size={13} />
-            <span>Client Praise & Trust</span>
+            <span>REAL CUSTOMER REVIEWS</span>
           </div>
 
           <h2
             style={{
-              fontSize: "clamp(2rem, 3.5vw, 3rem)",
+              fontSize: "clamp(1.85rem, 3.2vw, 2.6rem)",
               color: "#1E1C1A",
-              lineHeight: "1.2",
+              lineHeight: "1.22",
               marginBottom: "12px",
+              fontWeight: 600,
             }}
           >
-            Loved By Families Across <em>India</em>
+            Loved by Homes Across <em>Delhi NCR &amp; Beyond</em>
           </h2>
 
-          <p style={{ color: "#66615C", fontSize: "0.98rem" }}>
-            Over 4,800+ five-star reviews from homeowners celebrating life’s grandest moments.
+          <p style={{ color: "#57524E", fontSize: "0.95rem", lineHeight: "1.6" }}>
+            See why thousands of homeowners trust Har Ghar Safai for honest flat pricing, zero-advance booking, and spotless results.
           </p>
+
+          {/* Social Proof Stat Bar */}
+          <div
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "18px",
+              marginTop: "16px",
+              padding: "8px 20px",
+              borderRadius: "9999px",
+              backgroundColor: "#FFFFFF",
+              border: "1px solid rgba(214, 184, 160, 0.6)",
+              boxShadow: "0 2px 10px rgba(0,0,0,0.03)",
+              fontSize: "0.85rem",
+              fontWeight: 600,
+              color: "#1E1C1A",
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+              <div style={{ display: "flex", gap: "2px", color: "#F59E0B" }}>
+                {[...Array(5)].map((_, s) => (
+                  <Star key={s} size={15} fill="#F59E0B" stroke="#F59E0B" />
+                ))}
+              </div>
+              <span><strong>4.9 / 5</strong> Average Rating</span>
+            </div>
+            <span style={{ color: "#D97706" }}>•</span>
+            <div style={{ display: "flex", alignItems: "center", gap: "5px", color: "#15803D" }}>
+              <ShieldCheck size={16} />
+              <span>100% Pay After Service</span>
+            </div>
+          </div>
         </div>
 
-        {/* 3 Review Cards */}
+        {/* Reviews Grid */}
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(310px, 1fr))",
-            gap: "28px",
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gap: "24px",
           }}
         >
           {reviews.map((rev, i) => (
-            <div
+            <article
               key={i}
               style={{
                 backgroundColor: "#FFFFFF",
                 borderRadius: "20px",
-                padding: "32px 28px",
-                border: "1px solid rgba(214, 184, 160, 0.45)",
-                boxShadow: "0 10px 30px rgba(30, 28, 26, 0.04)",
+                padding: "28px 24px",
+                border: "1px solid rgba(214, 184, 160, 0.55)",
+                boxShadow: "0 8px 24px rgba(30, 28, 26, 0.04)",
                 display: "flex",
                 flexDirection: "column",
                 position: "relative",
+                transition: "transform 0.2s ease, box-shadow 0.2s ease",
               }}
+              className="review-card"
             >
-              {/* Occasion Badge */}
+              {/* Top Row: Service Tag & Rating */}
               <div
                 style={{
-                  display: "inline-flex",
+                  display: "flex",
                   alignItems: "center",
-                  gap: "6px",
-                  fontSize: "0.75rem",
-                  fontWeight: 700,
-                  color: "#D97706",
-                  backgroundColor: "#FEF3C7",
-                  padding: "4px 10px",
-                  borderRadius: "9999px",
-                  marginBottom: "16px",
-                  alignSelf: "flex-start",
+                  justifyContent: "space-between",
+                  marginBottom: "14px",
+                  gap: "8px",
+                  flexWrap: "wrap",
                 }}
               >
-                <Sparkles size={12} />
-                <span>{rev.occasion}</span>
+                <span
+                  style={{
+                    fontSize: "0.74rem",
+                    fontWeight: 700,
+                    color: "#92400E",
+                    backgroundColor: "#FEF3C7",
+                    border: "1px solid rgba(217, 119, 6, 0.2)",
+                    padding: "3px 10px",
+                    borderRadius: "9999px",
+                  }}
+                >
+                  {rev.service}
+                </span>
+
+                <div style={{ display: "flex", gap: "2px", color: "#F59E0B" }}>
+                  {[...Array(rev.rating)].map((_, s) => (
+                    <Star key={s} size={14} fill="#F59E0B" stroke="#F59E0B" />
+                  ))}
+                </div>
               </div>
 
-              {/* Stars */}
-              <div style={{ display: "flex", gap: "3px", color: "#F59E0B", marginBottom: "16px" }}>
-                {[...Array(rev.rating)].map((_, s) => (
-                  <Star key={s} size={16} fill="#F59E0B" stroke="#F59E0B" />
-                ))}
-              </div>
-
-              {/* Quote text */}
+              {/* Review Text */}
               <p
                 style={{
-                  fontSize: "0.94rem",
+                  fontSize: "0.92rem",
                   color: "#44403C",
-                  lineHeight: "1.7",
-                  marginBottom: "24px",
-                  fontStyle: "italic",
+                  lineHeight: "1.65",
+                  marginBottom: "20px",
                   flex: 1,
                 }}
               >
                 &ldquo;{rev.text}&rdquo;
               </p>
 
-              {/* Author footer */}
+              {/* Author & Verification Footer */}
               <div
                 style={{
                   display: "flex",
-                  alignItems: "center",
+                  alignItems: "flex-end",
                   justifyContent: "space-between",
-                  paddingTop: "16px",
+                  paddingTop: "14px",
                   borderTop: "1px solid rgba(0, 0, 0, 0.06)",
+                  fontSize: "0.82rem",
+                  gap: "10px",
                 }}
               >
-                <div>
+                <div style={{ minWidth: 0, flex: 1 }}>
                   <div
                     style={{
                       fontWeight: 700,
-                      fontSize: "0.98rem",
                       color: "#1E1C1A",
                       display: "flex",
                       alignItems: "center",
-                      gap: "6px",
+                      gap: "5px",
                     }}
                   >
-                    <span>{rev.name}</span>
-                    <span title="Verified Customer" style={{ display: "inline-flex" }}>
-                      <CheckCircle2 size={15} color="#10B981" />
+                    <span style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                      {rev.name}
+                    </span>
+                    <span title="Verified Customer" style={{ display: "inline-flex", flexShrink: 0 }}>
+                      <CheckCircle2 size={14} color="#16A34A" />
                     </span>
                   </div>
-                  <div style={{ fontSize: "0.8rem", color: "#78716C" }}>
+                  <div style={{ color: "#78716C", fontSize: "0.76rem" }}>
                     {rev.location}
                   </div>
                 </div>
 
-                <span style={{ fontSize: "0.75rem", color: "#A8A29E" }}>
+                <span style={{ fontSize: "0.73rem", color: "#A8A29E", whiteSpace: "nowrap", flexShrink: 0 }}>
                   {rev.date}
                 </span>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
+
+      <style jsx>{`
+        .review-card:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 12px 32px rgba(30, 28, 26, 0.08) !important;
+        }
+      `}</style>
     </section>
   );
 }

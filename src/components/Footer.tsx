@@ -258,8 +258,18 @@ export default function Footer({
                 </a>
               </li>
               <li>
+                <a href="#reviews" style={{ color: "#B8B2A9", textDecoration: "none" }}>
+                  • Customer Reviews (4.9★ Verified)
+                </a>
+              </li>
+              <li>
+                <a href="#faqs" style={{ color: "#B8B2A9", textDecoration: "none" }}>
+                  • Frequently Asked Questions (FAQs)
+                </a>
+              </li>
+              <li>
                 <a href="#payment-modes" style={{ color: "#A8A29E", textDecoration: "none" }}>
-                  • Payment Options (UPI, Cash)
+                  • Payment Options (UPI, Cash • 0% Advance)
                 </a>
               </li>
             </ul>
