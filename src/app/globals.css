@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap');
+
+:root {
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  /* Color Palette matching the warm editorial luxury screenshot */
+  --bg-primary: #FAF6F0;
+  --bg-secondary: #F4ECE1;
+  --bg-card: #FFFFFF;
+  --bg-peach: #F6E9DE;
+  --bg-peach-light: #FBF4ED;
+  --bg-peach-accent: #EEDCCE;
+  --bg-sage: #DCE5DF;
+  --bg-sage-dark: #4A6353;
+  --bg-charcoal: #1E1C1A;
+  --bg-charcoal-hover: #332F2C;
+
+  /* Typography Colors */
+  --text-main: #1D1A18;
+  --text-body: #57524E;
+  --text-muted: #8E8781;
+  --text-light: #FAF6F0;
+
+  /* Festive Accent Tones */
+  --festive-gold: #D97706;
+  --festive-gold-dark: #B45309;
+  --festive-gold-light: #FEF3C7;
+  --festive-vermilion: #C2410C;
+  --festive-maroon: #881337;
+  --festive-rose: #E11D48;
+  --festive-green: #047857;
+
+  /* Borders & Shadows */
+  --border-subtle: rgba(29, 26, 24, 0.08);
+  --border-peach: rgba(214, 184, 160, 0.4);
+  --shadow-sm: 0 2px 8px rgba(30, 28, 26, 0.04);
+  --shadow-md: 0 10px 30px rgba(30, 28, 26, 0.06);
+  --shadow-lg: 0 20px 45px rgba(30, 28, 26, 0.1);
+  --shadow-glow: 0 0 35px rgba(217, 119, 6, 0.25);
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 9999px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography styles */
+h1, h2, h3, h4, .serif-font {
+  font-family: var(--font-serif);
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+
+h1 em, h2 em, h3 em, .italic-accent {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text-main);
+}
+
+p {
+  color: var(--text-body);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Base button styles matching screenshot */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-sans);
+  font-size: 0.938rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid transparent;
+}
+
+.btn-dark {
+  background-color: var(--bg-charcoal);
+  color: #FFFFFF;
+}
+
+.btn-dark:hover {
+  background-color: var(--bg-charcoal-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-sage {
+  background-color: var(--bg-sage);
+  color: var(--text-main);
+}
+
+.btn-sage:hover {
+  background-color: #CAD5CE;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(74, 99, 83, 0.15);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1.5px solid var(--text-main);
+  color: var(--text-main);
+}
+
+.btn-outline:hover {
+  background-color: var(--text-main);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.btn-festive {
+  background: linear-gradient(135deg, #D97706 0%, #B45309 100%);
+  color: #FFFFFF;
+  box-shadow: 0 6px 20px rgba(217, 119, 6, 0.3);
+}
+
+.btn-festive:hover {
+  background: linear-gradient(135deg, #E08412 0%, #9A3412 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(217, 119, 6, 0.4);
+}
+
+.btn-sm {
+  padding: 8px 20px;
+  font-size: 0.85rem;
+}
+
+/* Pill badge */
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 0.813rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.badge-festive {
+  background: rgba(217, 119, 6, 0.12);
+  color: var(--festive-gold-dark);
+  border: 1px solid rgba(217, 119, 6, 0.25);
+}
+
+.badge-shaadi {
+  background: rgba(225, 29, 72, 0.1);
+  color: var(--festive-maroon);
+  border: 1px solid rgba(225, 29, 72, 0.25);
+}
+
+/* Animations */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; filter: drop-shadow(0 0 12px rgba(217, 119, 6, 0.6)); }
+}
+
+.animate-float {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: #D7CCC2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8A89A;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
