@@ -92,7 +92,7 @@ export default function PricingPlans({
       id: "full-house",
       name: "Full House Complete Package",
       tagline: "Comprehensive 360° deep clean of your entire home",
-      price: 899,
+      price: "Under ₹1000",
       duration: "2.5 - 3.5 hours",
       suitableFor: "Complete home (Rooms + Kitchen + Bath)",
       tasks: [

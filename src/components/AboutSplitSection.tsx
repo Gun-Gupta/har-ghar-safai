@@ -250,41 +250,6 @@ export default function AboutSplitSection({
                 </div>
               </div>
             </div>
-
-            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-              <a
-                href="https://wa.me/919027865224?text=Hi%20Safai%20Wala,%20I%20would%20like%20to%20schedule%20a%20deep%20cleaning%20session!"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-dark"
-                style={{
-                  padding: "14px 28px",
-                  textDecoration: "none",
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "8px",
-                }}
-              >
-                <MessageSquare size={17} color="#25D366" />
-                <span>Book via WhatsApp</span>
-                <Sparkles size={16} />
-              </a>
-
-              <a
-                href="tel:+919027865224"
-                className="btn btn-sage"
-                style={{
-                  padding: "14px 24px",
-                  textDecoration: "none",
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "8px",
-                }}
-              >
-                <Phone size={17} color="#D97706" />
-                <span>Call +91 90278 65224</span>
-              </a>
-            </div>
           </div>
         </div>
       </div>

@@ -166,7 +166,7 @@ export default function Hero({
                 }}
               >
                 <Sparkles size={11} color="#D97706" />
-                <span>Full House: <strong>Under ₹1,000 (₹899)</strong></span>
+                <span>Full House: <strong>Under ₹1,000</strong></span>
               </div>
 
               <div
@@ -250,14 +250,6 @@ export default function Hero({
               >
                 <Phone size={14} color="#D97706" />
                 <span style={{ color: "#78716C", fontSize: "0.74rem", textTransform: "uppercase" }}>Call:</span>
-                <a
-                  href={TEL_PRIMARY_LINK}
-                  title={`Call Line 1: ${PRIMARY_PHONE}`}
-                  style={{ color: "#1E1C1A", textDecoration: "none" }}
-                >
-                  90278 65224
-                </a>
-                <span style={{ color: "#D97706", fontWeight: 400 }}>/</span>
                 <a
                   href={TEL_SECONDARY_LINK}
                   title={`Call Line 2: ${SECONDARY_PHONE}`}

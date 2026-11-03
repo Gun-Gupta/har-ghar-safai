@@ -7,8 +7,8 @@ export default function Testimonials() {
   const reviews = [
     {
       name: "Rohit & Ananya Verma",
-      location: "Sector 62, Noida",
-      service: "Full House Package (₹899)",
+      location: "City center , Gwalior",
+      service: "Full House Package ",
       text: "Booked the Full House under ₹1,000 package before shifting into our 2BHK rental. The 2-person crew spent 4 hours deep cleaning every corner, wardrobes, and windows. Paying after inspecting everything gave us 100% peace of mind. Truly unbeatable value!",
       rating: 5,
       date: "October 2026",
@@ -16,8 +16,8 @@ export default function Testimonials() {
     },
     {
       name: "Pooja Sharma",
-      location: "Dwarka, New Delhi",
-      service: "Kitchen Deep Clean (₹199)",
+      location: "Shinde ki Chawni, Gwalior",
+      service: "Kitchen Deep Clean ",
       text: "My kitchen chimney and tiled backsplash had heavy oil grease from festive cooking. At just ₹199, I was skeptical, but the cleaners used industrial degreasers and made my kitchen sparkle like brand new. No advance required either!",
       rating: 5,
       date: "October 2026",
@@ -25,8 +25,8 @@ export default function Testimonials() {
     },
     {
       name: "Amit Singhal",
-      location: "DLF Phase 4, Gurgaon",
-      service: "2 Bathrooms + 1 Bedroom (₹597)",
+      location: "City center , Gwalior",
+      service: "2 Bathrooms + 1 Bedroom ",
       text: "The hard water scaling on our bathroom glass and chrome taps was completely removed. Hardworking, polite staff who arrived right on time with all their own cleaning liquids and microfiber mops. Highly recommend Har Ghar Safai to everyone.",
       rating: 5,
       date: "September 2026",
@@ -34,7 +34,7 @@ export default function Testimonials() {
     },
     {
       name: "Meenakshi Sundaram",
-      location: "Indirapuram, Ghaziabad",
+      location: "Thatipur , Gwalior",
       service: "Custom Service (Balcony + Sofa)",
       text: "Requested custom service for pigeon netting cleanup, balcony high-pressure wash, and 5-seater sofa shampooing. The quote given on WhatsApp was transparent with zero hidden costs. Excellent service!",
       rating: 5,
@@ -85,7 +85,7 @@ export default function Testimonials() {
               fontWeight: 600,
             }}
           >
-            Loved by Homes Across <em>Delhi NCR &amp; Beyond</em>
+            Loved by Homes Across <em>Gwalior &amp; Beyond</em>
           </h2>
 
           <p style={{ color: "#57524E", fontSize: "0.95rem", lineHeight: "1.6" }}>

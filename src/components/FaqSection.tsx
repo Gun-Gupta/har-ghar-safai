@@ -198,9 +198,6 @@ export default function FaqSection() {
             >
               <Phone size={13} color="#FBBF24" />
               <span style={{ color: "#A8A29E", fontSize: "0.72rem" }}>CALL:</span>
-              <a href={TEL_PRIMARY_LINK} style={{ color: "#FFFFFF", textDecoration: "none" }}>
-                90278 65224
-              </a>
               <span style={{ color: "#D97706" }}>/</span>
               <a href={TEL_SECONDARY_LINK} style={{ color: "#FBBF24", textDecoration: "none" }}>
                 93026 42694

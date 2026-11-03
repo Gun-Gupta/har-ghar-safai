@@ -202,14 +202,6 @@ export default function Navbar({
           >
             <Phone size={12} color="#D97706" />
             <a
-              href={TEL_PRIMARY_LINK}
-              title={`Call Line 1: ${PRIMARY_PHONE}`}
-              style={{ color: "#92400E", textDecoration: "none" }}
-            >
-              90278 65224
-            </a>
-            <span style={{ color: "rgba(146, 64, 14, 0.35)", fontWeight: 400 }}>/</span>
-            <a
               href={TEL_SECONDARY_LINK}
               title={`Call Line 2: ${SECONDARY_PHONE}`}
               style={{ color: "#92400E", textDecoration: "none" }}

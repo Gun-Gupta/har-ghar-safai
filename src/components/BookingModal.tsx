@@ -61,7 +61,7 @@ export default function BookingModal({
     "per-room": { name: "Per Room Cleaning", price: 199 },
     "kitchen-cleaning": { name: "Kitchen Deep Clean", price: 199 },
     "bathroom-cleaning": { name: "Bathroom Deep Clean", price: 199 },
-    "full-house": { name: "Full House Complete Clean (Under ₹1,000)", price: 899 },
+    "full-house": { name: "Full House Complete Clean ", price: "Under ₹1000" },
     "custom-service": { name: "Custom Cleaning Service", price: "Flexible Quote" },
   };
 
@@ -213,7 +213,7 @@ export default function BookingModal({
             <option value="per-room">Per Room Cleaning — ₹199</option>
             <option value="kitchen-cleaning">Kitchen Deep Clean — ₹199</option>
             <option value="bathroom-cleaning">Bathroom Deep Clean — ₹199</option>
-            <option value="full-house">Full House Complete Clean — ₹899 (Under ₹1,000)</option>
+            <option value="full-house">Full House Complete Clean (Under ₹1,000)</option>
             <option value="custom-service">Custom Service — Flexible / Tailored Quote</option>
           </select>
         </div>
@@ -310,29 +310,7 @@ export default function BookingModal({
           </button>
 
           {/* Direct Phone Call Buttons - Line 1 & Line 2 */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px" }}>
-            <a
-              href={TEL_PRIMARY_LINK}
-              style={{
-                backgroundColor: "#1E1C1A",
-                color: "#FFFFFF",
-                borderRadius: "12px",
-                padding: "13px 14px",
-                fontSize: "0.85rem",
-                fontWeight: 700,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: "8px",
-                textDecoration: "none",
-                boxShadow: "0 4px 14px rgba(0, 0, 0, 0.15)",
-                transition: "all 0.2s ease",
-              }}
-            >
-              <Phone size={15} color="#FBBF24" />
-              <span>Call 90278 65224</span>
-            </a>
-
+          <div style={{ display: "grid", gridTemplateColumns: "1fr ", gap: "10px" }}>
             <a
               href={TEL_SECONDARY_LINK}
               style={{

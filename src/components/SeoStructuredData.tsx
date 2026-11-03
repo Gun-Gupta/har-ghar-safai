@@ -9,16 +9,16 @@ export default function SeoStructuredData() {
     "alternateName": "Har Ghar Safai Cleaning Services",
     "image": "https://hargharsafai.in/images/hero-cleaner.jpg",
     "url": "https://hargharsafai.in",
-    "telephone": "+919027865224",
-    "priceRange": "₹199 - ₹899",
+    "telephone": "+919302642694",
+    "priceRange": "₹199 - ₹1000",
     "paymentAccepted": "Cash, UPI, PhonePe, Google Pay, Paytm",
     "currenciesAccepted": "INR",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Connaught Place",
-      "addressLocality": "New Delhi",
-      "addressRegion": "Delhi",
-      "postalCode": "110001",
+      "streetAddress": "474003",
+      "addressLocality": "gwalior",
+      "addressRegion": "Madhya Pradesh",
+      "postalCode": "474003",
       "addressCountry": "IN"
     },
     "geo": {
@@ -45,20 +45,12 @@ export default function SeoStructuredData() {
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "+919027865224",
+        "telephone": "+919302642694",
         "contactType": "customer service",
         "contactOption": "TollFree",
         "areaServed": "IN",
         "availableLanguage": ["English", "Hindi"]
       },
-      {
-        "@type": "ContactPoint",
-        "telephone": "+919302642694",
-        "contactType": "reservations",
-        "contactOption": "TollFree",
-        "areaServed": "IN",
-        "availableLanguage": ["English", "Hindi"]
-      }
     ],
     "aggregateRating": {
       "@type": "AggregateRating",

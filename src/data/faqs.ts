@@ -7,7 +7,7 @@ export const FAQS_DATA: FaqItem[] = [
   {
     question: "Is the ₹199 price truly all-inclusive with zero hidden fees?",
     answer:
-      "Yes, absolutely. Our flat rates (Per Room ₹199, Kitchen ₹199, Bathroom ₹199, and Full House under ₹1,000 at ₹899) are 100% transparent. There are no sudden travel surcharges, chemical fees, or surprise taxes added later.",
+      "Yes, absolutely. Our flat rates (Per Room ₹199, Kitchen ₹199, Bathroom ₹199, and Full House under ₹1,000) are 100% transparent. There are no sudden travel surcharges, chemical fees, or surprise taxes added later.",
   },
   {
     question: "How does the 'Zero Advance, Pay After Inspection' policy work?",
@@ -30,9 +30,9 @@ export const FAQS_DATA: FaqItem[] = [
       "The Bathroom service includes tile wall scrub down, hard water and soap scum removal from glass/fixtures, toilet bowl & rim descaling with disinfectant, washbasin & mirror polish, drain unblocking check, and chrome tap descaling to restore a brilliant shine.",
   },
   {
-    question: "What does the Full House Complete Package (₹899) cover?",
+    question: "What does the Full House Complete Package cover?",
     answer:
-      "The Full House package (under ₹1,000 at ₹899) is an end-to-end overhaul covering all living bedrooms, halls, kitchen deep clean, bathrooms, balcony sweep & mop, windows, doors, and fans. Perfect before shifting into a new home, festival preparation, or periodic deep clean.",
+      "The Full House package (under ₹1,000) is an end-to-end overhaul covering all living bedrooms, halls, kitchen deep clean, bathrooms, balcony sweep & mop, windows, doors, and fans. Perfect before shifting into a new home, festival preparation, or periodic deep clean.",
   },
   {
     question: "How do I get a quote for Custom Services (Sofa, Balcony, Chimney)?",
@@ -52,6 +52,6 @@ export const FAQS_DATA: FaqItem[] = [
   {
     question: "How quickly can I get a cleaning slot confirmed?",
     answer:
-      "Same-day and next-day slots are open! You can book in less than 60 seconds on WhatsApp or call our helplines directly at +91 90278 65224 or +91 93026 42694.",
+      "Same-day and next-day slots are open! You can book in less than 60 seconds on WhatsApp or call our helplines directly at +91 93026 42694.",
   },
 ];

@@ -112,21 +112,12 @@ export default function Footer({
               }}
             >
               <Phone size={15} color="#D97706" />
-              <span style={{ color: "#78716C", fontSize: "0.76rem", textTransform: "uppercase" }}>Call:</span>
-              <a
-                href={TEL_PRIMARY_LINK}
-                title={`Call Primary: ${PRIMARY_PHONE}`}
-                style={{ color: "#1E1C1A", textDecoration: "none" }}
-              >
-                90278 65224
-              </a>
-              <span style={{ color: "#D97706" }}>•</span>
-              <a
+              <span style={{ color: "#78716C", fontSize: "0.76rem", textTransform: "uppercase" }}>Call:</span>              <a
                 href={TEL_SECONDARY_LINK}
                 title={`Call Secondary: ${SECONDARY_PHONE}`}
                 style={{ color: "#1E1C1A", textDecoration: "none" }}
               >
-                93026 42694
+              93026 42694
               </a>
             </div>
           </div>
@@ -248,7 +239,7 @@ export default function Footer({
               <li>
                 <a href="#services" style={{ color: "#B8B2A9", textDecoration: "none", display: "flex", justifyContent: "space-between" }}>
                   <span>• Full House Complete Package</span>
-                  <strong style={{ color: "#4ADE80" }}>₹899 (Under ₹1k)</strong>
+                  <strong style={{ color: "#4ADE80" }}>Under ₹1k</strong>
                 </a>
               </li>
               <li>
@@ -298,11 +289,8 @@ export default function Footer({
                     Direct Calling Helpline
                   </div>
                   <div style={{ display: "flex", flexDirection: "column", gap: "3px", marginTop: "2px" }}>
-                    <a href={TEL_PRIMARY_LINK} style={{ color: "#FFFFFF", textDecoration: "none", fontWeight: 600, fontSize: "0.92rem" }}>
-                      Line 1: {PRIMARY_PHONE}
-                    </a>
                     <a href={TEL_SECONDARY_LINK} style={{ color: "#FBBF24", textDecoration: "none", fontWeight: 600, fontSize: "0.92rem" }}>
-                      Line 2: {SECONDARY_PHONE}
+                      {SECONDARY_PHONE}
                     </a>
                   </div>
                 </div>
@@ -316,20 +304,12 @@ export default function Footer({
                   </div>
                   <div style={{ display: "flex", flexDirection: "column", gap: "3px", marginTop: "2px" }}>
                     <a
-                      href={getWhatsAppLink("Hi Har Ghar Safai! I would like to book a cleaning slot.")}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{ color: "#22C55E", textDecoration: "none", fontWeight: 600, fontSize: "0.9rem" }}
-                    >
-                      {PRIMARY_PHONE} (Instant Reply)
-                    </a>
-                    <a
                       href={getWhatsAppLink("Hi Har Ghar Safai! I would like to book a cleaning slot.", "919302642694")}
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ color: "#86EFAC", textDecoration: "none", fontWeight: 600, fontSize: "0.9rem" }}
                     >
-                      {SECONDARY_PHONE} (Helpline 2)
+                      {SECONDARY_PHONE} (Helpline)
                     </a>
                   </div>
                 </div>
@@ -351,7 +331,7 @@ export default function Footer({
                   <div style={{ fontSize: "0.75rem", color: "#78716C", textTransform: "uppercase", fontWeight: 700 }}>
                     Email Support
                   </div>
-                  <span>har-ghar-safai@gmail.com</span>
+                  <span>harghrsafai@gmail.com</span>
                 </div>
               </div>
 
